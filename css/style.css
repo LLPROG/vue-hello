@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-class {
+    text-transform: uppercase;
+    margin: 3rem;
+    font-size: 5em;
+}
+
+.btn-class {
+    color: rgb(25, 23, 173);
+    text-transform: uppercase;
+    margin: 3rem;
+    font-size: 3em;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+.yellow {
+    color: rgb(251, 255, 0);
+}
+
+.green {
+    color: rgb(0, 255, 21);
+}
