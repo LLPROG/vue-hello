@@ -19,18 +19,8 @@
     border-radius: 20px;
 }
 
-.blue {
-    color: blue;
-}
+.image-class {
+    display: block;
+    margin: 3rem;
 
-.red {
-    color: rgb(255, 0, 0);
-}
-
-.yellow {
-    color: rgb(251, 255, 0);
-}
-
-.green {
-    color: rgb(0, 255, 21);
 }

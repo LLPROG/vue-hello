@@ -18,6 +18,8 @@
         <button :class="btnClass" v-on:click.self="changeMessage">
             {{ buttonMessage}}
         </button>
+
+        <img v-bind:src="srcImage" v-bind:alt="altImage" :class="imageClass">
     </div>
 
 

@@ -20,7 +20,9 @@ const settings = {
         titleMessage: 'ciao',
         buttonMessage: 'cambia ciao in hello',
 
-        color:'blue'
+        srcImage: 'https://picsum.photos/400/400',
+		altImage: 'image from lorem picsum',
+        imageClass: 'image-class'
 
 	},
 	methods: {
@@ -31,8 +33,6 @@ const settings = {
             } else {
                 this.titleMessage = 'ciao';
                 this.buttonMessage = 'cambia ciao in hello';
-
-
             }
             
 		}
