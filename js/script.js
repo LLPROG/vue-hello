@@ -11,34 +11,54 @@ Aggiungere alla pagina un’immagine, presa anch’essa da un data.
 
 */
 
-const settings = {
+const app = new Vue({
 	el: '#app', //container dove Vue agisce
 	data: {
 		///dati visualizzati da Vue
+
         titleClass: 'title-class',
         btnClass: 'btn-class',
+        color:'blue',
+
         titleMessage: 'ciao',
-        buttonMessage: 'cambia ciao in hello',
+        buttonMessage1: 'cambia ciao in hello',
+        buttonMessage2: 'show content up here',
+
 
         srcImage: 'https://picsum.photos/400/400',
 		altImage: 'image from lorem picsum',
-        imageClass: 'image-class'
-
-	},
-	methods: {
-		changeMessage: function() {
+        imageClass: 'image-class',
+        invertory: 100, 
+        hidden: false
+    },   
+        
+    methods: {
+        changeMessage: function() {
             if(this.titleMessage == 'ciao') {
                 this.titleMessage = 'hello';
-                this.buttonMessage = 'change hello in ciao';
+                this.buttonMessage1 = 'change hello in ciao';
+
             } else {
                 this.titleMessage = 'ciao';
-                this.buttonMessage = 'cambia ciao in hello';
+                this.buttonMessage1 = 'cambia ciao in hello';
+
             }
             
-		}
+        },
 
-	}
-}
+        changeDisplay: function() {
+            if(this.hidden == true) {
+                this.hidden = false;
+                this.buttonMessage2 = 'show content up here';
 
-const app = new Vue(settings);
+            } else {
+                this.hidden = true;
+                this.buttonMessage2 = 'hide';
+
+            }
+        },
+
+    }
+
+});
 

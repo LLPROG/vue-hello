@@ -12,14 +12,27 @@
 
     <div id="app">
         <h1 :class="titleClass">
-            {{ titleMessage }}
+            {{titleMessage}}
         </h1>
 
         <button :class="btnClass" v-on:click.self="changeMessage">
-            {{ buttonMessage}}
+            {{buttonMessage1}}
         </button>
 
         <img v-bind:src="srcImage" v-bind:alt="altImage" :class="imageClass">
+
+        <p v-if="invertory > 10" :class="titleClass">in stock</p>
+        <p v-else :class="titleClass">out of stock</p>
+
+
+        <p v-show="hidden" :class="titleClass">
+            hidden
+        </p>
+
+        <button :class="btnClass" v-on:click.self="changeDisplay">
+            {{buttonMessage2}}
+        </button>
+
     </div>
 
 
